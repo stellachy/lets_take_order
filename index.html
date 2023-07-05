@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="An easy app for my mum to take order more effortlessly~" />        
+        <meta name="author" content="Stella Chuang" />
+        <meta name="keywords" content="web, taking order, seedling" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Taking Order System</title>
+        <link rel="stylesheet" href="assets/css/styles.css" />
+    </head>
+    <body>
+        <h1>Let's Take Order ... </h1>
+        <!--<a href="index.html" target="_blank"><img src="home.png" width="30px"/></a>
+        -->
+        <h2>Please fill in the following infomation!</h2>
+        <div>
+            <p><b>顧客姓名</b></p>
+            <input id="customer" type="text" width=100px/>
+        </div>
+
+        <div>
+            <p id="address"><b>運送地址</b></p>
+            <input id="county" placeholder="縣市" type="text" width=100px/>
+            <input id="village" placeholder="鄉鎮" type="text" width=100px/>
+            <input id="others" placeholder="其他" type="text" width=300px/>
+        </div>
+
+        <div>
+            <p id="content"><b>訂單內容</b></p>
+            <input id="productType" placeholder="品種" type="text" width=100px/>
+            <input id="productPrice" placeholder="價格" type="text" width=50px/>
+            <input id="productAmount" placeholder="數量" type="text" width=50px/>
+        </div>
+
+        <div>
+            <p id="shipping"><b>運送方式與費用</b></p>
+            <input id="shippingMethod" placeholder="運送方式" type="text" width=100x/>
+            <input id="shippingCost" placeholder="運費" type="text" width=50px/>
+        </div>
+
+        <!--can i use a calendar for users to select?-->
+        <div>
+            <p id="time"><b>預計收貨日期</b></p>
+            <input id="timeYear" placeholder="民國年" type="text" width=50px/>
+            <input id="timeMonth" placeholder="月" type="text" width=50px/>
+            <input id="timeDate" placeholder="日" type="text" width=50px/>
+        </div>
+
+        <br/>
+        <br/>
+        <button id="btn" type="submit">Post</button>
+        <hr/>
+        <div id="result">
+            <div class="order-result">
+                <h2></h2>
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
